@@ -6,21 +6,20 @@
       {
         "name": "Michael Lang",
         "role": "Developer",
-        "email": "michael.lang@h-da.de"
+        "email": "info@mediadesign-ffm.de"
       }
     ],
     "license": ["GPL-2.0-or-later"],
     "keywords": [
       "TYPO3",
-      "extension",
-      "t3up"
+      "extension"
     ],
     "require": {
       "typo3/cms-core": "^11.5"
     },
     "autoload": {
       "psr-4": {
-          "T3ac\\T3upImage\\": "Classes"
+          "T3md\\Wbh\\": "Classes"
       }
     },
     "extra": {
