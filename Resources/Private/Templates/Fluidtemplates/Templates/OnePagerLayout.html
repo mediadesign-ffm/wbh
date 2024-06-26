@@ -1,0 +1,29 @@
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout name="Standard" />
+    <f:section name="Content">
+        <f:render partial="Header.html" section="list" arguments="{_all}" />
+        <main id="content" role="main" class="oneColumn onePager">
+      		<div class="overlay"></div> 
+      		
+      		<h1 class="notvissible">{title}</h1>  
+
+      		<div class="container p-0">
+	        	<f:format.raw>{media}</f:format.raw> 
+		
+				
+			              
+	             <div id="article-content" class="col-12 content">
+	                <!--TYPO3SEARCH_begin--> 
+	                    <f:format.raw>{content}</f:format.raw>
+	                <!--TYPO3SEARCH_end-->  
+	             </div>
+		        <f:if condition="{data.previousnext}">
+		        	<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+		        </f:if>   
+	        </div>
+	        
+	        
+	                
+        </main>
+     </f:section>
+</html>

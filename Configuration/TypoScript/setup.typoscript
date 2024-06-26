@@ -1,0 +1,7 @@
+###########################
+#### PAGE #################
+###########################
+
+page.includeCSS.wbh                          = EXT:wbh/Resources/Public/Sass/_wbh.scss
+
+

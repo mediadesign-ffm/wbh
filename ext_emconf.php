@@ -8,7 +8,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title'            => 'wbh - Basic Installation',
     'description'      => 'wbh - Distribution.',
-    'version'          => '1.0.0',
+    'version'          => '11.0.0',
     'state'            => 'alpha',
     'category'         => 'templates',
     'author'           => 'Michael Lang',

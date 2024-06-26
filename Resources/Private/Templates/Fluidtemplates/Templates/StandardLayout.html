@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout name="Standard" />
+    <f:section name="Content">
+        <f:render partial="Header.html" section="list" arguments="{_all}" />
+        <main id="content" role="main" class="rightMarginal">
+            <div class="overlay"></div> 
+		     <h1 class="notvissible">{title}</h1>  
+		     
+		     
+            <div class="container px-0">  
+            
+            <f:format.raw>{media}</f:format.raw>
+            
+                <div class="row mx-0">
+
+                    <div class="col-12 content pt-3">
+                        <div class="row">
+                        <!--TYPO3SEARCH_begin--> 
+                            <div class="col-12 col-md-8 content px-lg-4">
+		                      <f:if condition="{breadcrumbpos} == 'content'">
+						        <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
+						    </f:if>
+				    
+                                <f:format.raw>{content}</f:format.raw>
+                            </div>
+                            <div class="col-12 col-md-4 right px-lg-4">
+                                <f:format.raw>{right}</f:format.raw>
+                                <div class="d-none d-lg-block subnav"><f:render partial="Submenu/Submenu" arguments="{_all}"/></div>
+                            </div>                          
+                        <!--TYPO3SEARCH_end-->  
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <f:if condition="{data.previousnext}">
+                <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+            </f:if>            
+        </main>
+     </f:section>
+</html>

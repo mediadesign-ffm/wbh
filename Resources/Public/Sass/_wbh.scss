@@ -1,0 +1,48 @@
+
+@import '../../../../t3up/Resources/Public/Sass/_grid.scss';
+
+/***************************************************************/
+
+main{																		 
+	
+	.frame-lightgrey											{transition: all ease 0.3s; background-color: lighten($grey,45%);
+		>h2,
+		>h3,
+		>h4														{padding: $v3 $v3 0; margin: 0 !important; letter-spacing: 0.01rem;}
+	> p															{padding: 0 $v3; }
+	> ul.ce-uploads												{padding: 0 $v3 $v3; }	
+	> div p:last-of-type										{margin-bottom: 0; }	
+	> div.table-wrapper											{padding: 0;}
+	> .ce-textpic > .ce-bodytext								{padding: $v3 $v3 $v3 0;}
+	> .ce-text													{padding: $v3;}
+	h2 + h3														{text-transform: none;}
+	h2 + div													{padding-top: 0; }
+	h3 + div													{padding-top: 0; }	
+	h4 + div													{padding-top: 0; }		
+	 }
+	 
+	.right{
+		h2, h3													{font-size: 100%; margin-top: 0; margin-bottom: .5vh;}
+		
+		
+	} 
+	 
+	 
+	.content .frame-felogin_login								{background: #fff; padding: $v3; }
+	 
+}
+
+footer{border-top: 1px solid  #adb5bd;}
+@media (min-width: 992px) {
+	main{	
+		.content > .frame-text.frame-white:hover,
+		.content > .frame-text.frame-lightgrey:hover,
+		.content > .frame-text.frame-colored:hover,		
+		.content > .frame-textmedia.frame-white:hover,
+		.content > .frame-textmedia.frame-lightgrey:hover,
+		.content > .frame-textmedia.frame-colored:hover			{box-shadow: $shadow;}
+	}
+	
+	
+	
+}
